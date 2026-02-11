@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="titulo">
+            <h2>historial</h2>
+        </section>
+
+        <section class="general">
+            <a href="../index.html"><button class="secundarios">menu principal</button></a>
+            <p>ultimos calculos realizados:</p>
+            <button onclick="mostrar()" class="principales">mostrar historial</button><br><br>
+            <button onclick="borrarH()" class="principales">borrar historial</button>
+        </section>
+
+        <section class="final">
+            <p id="historial"></p>
+        </section>
+    </div>
+
+    <script src="historial.js"></script>
+</body>
+</html>

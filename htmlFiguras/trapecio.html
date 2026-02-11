@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapecio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="titulo">
+            <h2>area y perimetro del trapecio</h2>
+        </section>
+
+        <section class="general">
+            <p>ingrese los datos a continuacion:</p><br>
+            <input type="number" id="base1" placeholder="base 1" class="DatoFigura"><br><br>
+            <input type="number" id="base2" placeholder="base 2" class="DatoFigura"><br><br>
+            <input type="number" id="lado1" placeholder="lado 1" class="DatoFigura"><br><br>
+            <input type="number" id="lado2" placeholder="lado 2" class="DatoFigura"><br><br>
+            <input type="number" id="altura" placeholder="altura" class="DatoFigura"><br><br>
+            <button onclick="calcular()" class="principales">calcular</button>
+            <a href="../index.html"><button class="secundarios">menu principal</button></a><br><br>
+        </section>
+
+        <section class="final">
+            <p id="resultado"></p>
+        </section>
+    </div>
+
+    <script src="../validacion/validacion.js"></script>
+    <script src="../validacion/limpiar.js"></script>
+    <script src="../historial/historial.js"></script>
+    <script src="../logicaFiguras/trapecio.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="titulo">
+            <h1>Calculadora de area y perimetro</h1>
+        </section>
+
+        <section class="general">
+            <p>seleccione la figura que desea calcular:</p><br>
+            <select name="calcular" id="figura">
+                <option value=""></option>
+                <option value="cuadrado">cuadrado o rectangulo</option>
+                <option value="triangulo">triangulo</option>
+                <option value="circulo">circulo</option>
+                <option value="rombo">rombo</option>
+                <option value="trapecio">trapecio</option>
+            </select><br><br>
+            <a href="historial/historial.html"><button class="principales">historial</button></a><br><br>
+            <button onclick="navegacion()" class="principales">navegar</button>
+        </section>
+
+        <section class="final">
+            <p id="resultado"></p>
+        </section>
+
+    </div>
+
+    <script src="menuPrincipal/menu.js"></script>
+</body>
+</html>
