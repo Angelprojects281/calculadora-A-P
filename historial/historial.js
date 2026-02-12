@@ -19,7 +19,7 @@ function mostrar() {
         salida += historial[i].figura +
           " | Área: " + historial[i].area +
           " | Perímetro: " + historial[i].perimetro +
-          "<br>";
+          "<br><br>";
 
     }
 
@@ -28,5 +28,8 @@ function mostrar() {
 
 function borrarH() {
     localStorage.removeItem("historial");
-    document.getElementById("historial").textContent= "historial borrado";   
+    document.getElementById("historial").textContent= "historial borrado";
+    setTimeout(()=> {
+        window.location.href= "historial.html";},"3000")
+    
 }
