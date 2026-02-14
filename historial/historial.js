@@ -27,8 +27,13 @@ function mostrar() {
 }
 
 function borrarH() {
-    localStorage.removeItem("historial");
-    document.getElementById("historial").textContent= "historial borrado";
+    let historial = JSON.parse(localStorage.getItem("historial")) || [];
+    
+    if (historial.length === 0){
+        document.getElementById("historial").textContent= "no se encontraron registros para eliminar"
+    } else {
+        localStorage.removeItem("historial");
+        document.getElementById("historial").textContent= "historial borrado";}
     setTimeout(()=> {
         window.location.href= "historial.html";},"3000")
     

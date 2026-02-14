@@ -12,7 +12,81 @@
             <h2>area y perimetro del circulo</h2>
         </section>
 
-        <section class="general">
+        <section class="explicacion">
+            <a href="#general" id="calculadora">accede a la calculadora</a><br>
+            <img src="../media/circulo.png" width="250" id="media"><br><br>
+                <h3>¿Qué es un círculo?</h3>
+            <p>
+                Un <strong>círculo</strong> es una figura geométrica plana y redonda formada por 
+                todos los puntos que están a la misma distancia de un punto central llamado 
+                <strong>centro</strong>.
+            </p>
+            <p>
+                Esa distancia constante desde el centro hasta el borde se llama 
+                <strong>radio</strong>. En esta calculadora solo necesitas ingresar el 
+                <strong>radio</strong>, ya que con este valor se pueden obtener tanto el área 
+                como el perímetro del círculo.
+            </p>
+
+            <h3>📏 Área del círculo</h3>
+            <p>
+                El <strong>área</strong> representa la cantidad de superficie que ocupa el círculo,
+                es decir, todo el espacio que hay dentro de su borde.
+            </p>
+
+            <p><strong>Fórmula:</strong></p>
+            <p>A = π · r²</p>
+
+            <p><strong>¿Qué significa la fórmula?</strong></p>
+            <ul>
+                <li><strong>r²</strong> significa que el radio se multiplica por sí mismo (r × r).</li>
+                <li><strong>π (pi)</strong> es una constante matemática aproximada a 3.1416.</li>
+                <li>Después de elevar el radio al cuadrado, el resultado se multiplica por π.</li>
+            </ul>
+
+            <p><strong>Paso a paso:</strong></p>
+            <ol>
+                <li>Multiplica el radio por el mismo radio.</li>
+                <li>Multiplica el resultado por 3.1416.</li>
+                <li>El valor obtenido es el área del círculo.</li>
+            </ol>
+
+            <p>
+                El área se expresa en <strong>unidades cuadradas</strong> (cm², m², etc.),
+                porque estamos midiendo superficie.
+            </p>
+
+            <h3>📐 Perímetro del círculo (Circunferencia)</h3>
+            <p>
+                El <strong>perímetro</strong> de un círculo, también llamado 
+                <strong>circunferencia</strong>, representa la medida del borde que lo rodea.
+            </p>
+
+            <p><strong>Fórmula:</strong></p>
+            <p>P = 2 · π · r</p>
+
+            <p><strong>¿Qué significa la fórmula?</strong></p>
+            <ul>
+                <li>Se multiplica el radio por 2.</li>
+                <li>Luego el resultado se multiplica por π (3.1416).</li>
+                <li>El valor final es la longitud del borde del círculo.</li>
+            </ul>
+
+            <p>
+                El perímetro se expresa en <strong>unidades lineales</strong> (cm, m, etc.),
+                porque estamos midiendo longitud.
+            </p>
+
+            <h3>🔎 Información importante</h3>
+            <ul>
+                <li>Solo necesitas el <strong>radio</strong> para realizar ambos cálculos.</li>
+                <li>El diámetro es el doble del radio.</li>
+                <li>El área mide superficie y el perímetro mide longitud.</li>
+            </ul>
+            <br><br><br><br>
+        </section>
+
+        <section class="general" id="general">
             <p>inserte los datos a continuacion: </p><br>
             <input type="number" id="radio", placeholder="radio" class="DatoFigura">
             <br><br>
