@@ -83,3 +83,15 @@
     color: azure;
 }
 
+button:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+select:hover{
+    transform: scale(1.05);
+}
