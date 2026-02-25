@@ -1,9 +1,13 @@
 .container {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
     background: linear-gradient(to bottom, black, rgb(0, 0, 134));
     font-family: Arial, Helvetica, sans-serif;
-    margin: -8px;
-    padding: 85px;
+    padding: 50px;
+    min-height: 100vh;
 
 }
 
@@ -14,6 +18,9 @@
 }
 
 .general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     color: aliceblue;
     font-style: italic;
@@ -28,39 +35,18 @@
 .DatoFigura{
     border-radius: 20px;
     border-color: black;
-    border-bottom: 10px;
     border-width: 3px;
     text-align: center;
-    padding: auto;
-    width: fit-content;
+    margin: 10px;
+
 }
 
 .principales{
     background-color: green;
-    border-radius: 10px;
-    border-style: double;
-    padding: auto;
-    width: fit-content;
-    font-size: medium;
-    text-transform: capitalize;
-    text-align: center;
-    border-color: white;
-    color: white;
-    border-width: 3px;
 }
 
 .secundarios{
     background-color: red;
-    border-radius: 10px;
-    border-style: double;
-    padding: auto;
-    width: fit-content;
-    font-size: medium;
-    text-transform: capitalize;
-    text-align: center;
-    border-color: white;
-    color: white;
-    border-width: 3px;
 }
 
 #figura{
@@ -76,12 +62,20 @@
 
 #calculadora {
     font-size: x-small;
+    margin: 10px;
 }
 
 .explicacion {
-    image-rendering:optimizeQuality;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     color: azure;
+
+}
+
+#media {
+    align-self: center;
+    margin: 10px;
 }
 
 button:hover {
@@ -95,4 +89,24 @@ button:active {
 
 select:hover{
     transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 10px;
+    border-style: double;
+    font-size: medium;
+    text-transform: capitalize;
+    text-align: center;
+    border-color: white;
+    color: white;
+    border-width: 3px;
+    margin: 5px;
 }
