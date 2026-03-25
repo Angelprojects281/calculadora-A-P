@@ -94,17 +94,15 @@ body {
     border-radius: 10px;
 }
 
-button:hover {
+button:hover:not(#portafolio) {
     transform: scale(1.05);
     transition: 0.2s;
+    cursor: pointer;
 }
 
-button:active {
+button:active:not(#portafolio) {
     transform: scale(0.8);
-}
-
-select:hover{
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
 a {
@@ -132,6 +130,13 @@ button {
     font-size: 10px;
     opacity: 0.6;
     border: double;
+}
+
+#portafolio:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor:help;
 }
 
 nav{
@@ -186,10 +191,12 @@ nav a {
     width: 100%;
 }
 
-a:hover {
+a:hover:not(#portafolio) {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
-a:active {
+a:active:not(#portafolio) {
     transform: scale(0.8);
+    cursor: pointer;
 }
