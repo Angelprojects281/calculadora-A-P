@@ -12,8 +12,40 @@
             <h2>historial</h2>
         </section>
 
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO 🏠</a>
+                </li>
+
+                <li class="despliegue" id="botondespliegue">
+                    <a href="#" onclick="despliegue()">FIGURAS⬇️ </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../htmlFiguras/circulo.html">CIRCULO</a>
+                        </li>
+                        <li>
+                            <a href="../htmlFiguras/cuadrado.html">CUADRADO Y RECTANGULO</a>
+                        </li>
+                        <li>
+                            <a href="../htmlFiguras/rombo.html">ROMBO</a>
+                        </li>
+                        <li>
+                            <a href="../htmlFiguras/trapecio.html">TRAPECIO</a>
+                        </li>
+                        <li>
+                            <a href="../htmlFiguras/triangulo.html">TRIANGULO</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="historial.html">HISTORIAL🕰️</a>
+                </li>
+            </ul>
+        </nav>
+
         <section class="general">
-            <a href="../index.html"><button class="secundarios">menu principal</button></a>
             <p>ultimos calculos realizados:</p>
             <button onclick="mostrar()" class="principales">mostrar historial</button>
             <a href="confirmacion.html"><button class="secundarios">borrar historial</button></a>
@@ -29,5 +61,6 @@
     </div>
 
     <script src="historial.js"></script>
+    <script src="../validacion/validacion.js"></script>
 </body>
 </html>

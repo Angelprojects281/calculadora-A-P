@@ -8,6 +8,39 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO 🏠</a>
+                </li>
+
+                <li class="despliegue" id="botondespliegue">
+                    <a href="#" onclick="despliegue()">FIGURAS⬇️ </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="circulo.html">CIRCULO</a>
+                        </li>
+                        <li>
+                            <a href="cuadrado.html">CUADRADO Y RECTANGULO</a>
+                        </li>
+                        <li>
+                            <a href="rombo.html">ROMBO</a>
+                        </li>
+                        <li>
+                            <a href="trapecio.html">TRAPECIO</a>
+                        </li>
+                        <li>
+                            <a href="triangulo.html">TRIANGULO</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../historial/historial.html">HISTORIAL🕰️</a>
+                </li>
+            </ul>
+        </nav>
+
         <section class="titulo">
             <h2>calculo de area y perimetro cuadrado y rectangulo</h2>
         </section>
@@ -77,7 +110,6 @@
             <input type="number" id="lado1" placeholder="lado 1" class="DatoFigura">
             <input type="number" id="lado2" placeholder="lado 2" class="DatoFigura">
             <button onclick="calcular()" class="principales">calcular</button>
-            <a href="../index.html" ><button class="secundarios">menu principal</button></a>
             
         </section>
 
