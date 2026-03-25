@@ -10,22 +10,50 @@
 <body>
     <div class="container">
 
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">INICIO 🏠</a>
+                </li>
+
+                <li class="despliegue" id="botondespliegue">
+                    <a href="#" onclick="despliegue()">FIGURAS⬇️ </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="htmlFiguras/circulo.html">CIRCULO</a>
+                        </li>
+                        <li>
+                            <a href="htmlFiguras/cuadrado.html">CUADRADO Y RECTANGULO</a>
+                        </li>
+                        <li>
+                            <a href="htmlFiguras/rombo.html">ROMBO</a>
+                        </li>
+                        <li>
+                            <a href="htmlFiguras/trapecio.html">TRAPECIO</a>
+                        </li>
+                        <li>
+                            <a href="htmlFiguras/triangulo.html">TRIANGULO</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="historial/historial.html">HISTORIAL🕰️</a>
+                </li>
+            </ul>
+        </nav>
+
+        
         <section class="titulo">
             <h1>Calculadora de area y perimetro</h1>
         </section>
 
-        <section class="general">
-            <p>seleccione la figura que desea calcular:</p>
-            <select name="calcular" id="figura">
-                <option value=""></option>
-                <option value="cuadrado">cuadrado o rectangulo</option>
-                <option value="triangulo">triangulo</option>
-                <option value="circulo">circulo</option>
-                <option value="rombo">rombo</option>
-                <option value="trapecio">trapecio</option>
-            </select>
-            <a href="historial/historial.html"><button class="principales">historial</button></a>
-            <button onclick="navegacion()" class="principales">navegar</button>
+        </section>
+
+        <section class="explicacion">
+            <p>"Esta es una herramienta sencilla pero potente diseñada para resolver cálculos de áreas y perímetros en segundos. La idea nació de querer facilitar esas operaciones geométricas que a veces se vuelven tediosas, automatizando las fórmulas para que solo tengas que preocuparte por ingresar los datos.</p>
+
+            <p>Ya sea que estés estudiando o simplemente necesites sacar una medida rápida, aquí tienes una interfaz limpia y sin distracciones. El proyecto está construido con HTML, CSS y JavaScript, enfocándome en que sea rápido y funcione bien tanto en tu computadora como en tu celular. ¡Pruébala y sácale provecho!"</p>
         </section>
 
         <section class="final">
@@ -39,5 +67,6 @@
     </div>
 
     <script src="menuPrincipal/menu.js"></script>
+    <script src="validacion/validacion.js"></script>
 </body>
 </html>

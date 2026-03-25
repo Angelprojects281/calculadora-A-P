@@ -10,3 +10,13 @@ function validar() { //funcion para validar los datos ingresados por el usuario
     }
     return true;
 }
+
+function despliegue() {
+    const submenu= document.querySelector('.submenu');
+
+    if (submenu.style.display === "block") {
+        submenu.style.display= 'none';
+    } else {
+        submenu.style.display= 'block';
+    }
+}    
