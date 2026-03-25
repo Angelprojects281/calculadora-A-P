@@ -1,13 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;    
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     justify-content: center;
-    background: linear-gradient(to bottom, #000000, #000086);
+    background: linear-gradient(70deg, #000086 0%, #000000 100%);
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+    padding: 100px;
     min-height: 100vh;
+    box-shadow: 0px 3px 10px #000000;
+    border: solid 5px #000000;
 
 }
 
@@ -16,6 +23,8 @@
     color: #ffffff;
     text-align: center;   
     text-transform: capitalize;
+    text-shadow: 0px 4px 10px #6a6868;
+    font-weight: bolder;
 }
 
 .general {
@@ -23,47 +32,49 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #f0f8ff;
+    color: #ffffff;
     font-style: italic;
+    text-shadow: 0px 3px 10px #000000;
+    font-weight: bold;
 }
 
 .final{
     color: #f0f8ff;
     font-size: larger;
     text-align: left;
+    text-transform: unset;
+    font: caption;
 }
 
 .DatoFigura{
-    border-radius: 20px;
-    border-color: #000000;
-    border-width: 3px;
+    border-radius: 30px;
+    border: none;
     text-align: center;
     margin: 10px;
+    background: linear-gradient(45deg, #524b4b, #d8cece);
+    padding: 10px 10px;
+    box-shadow: inset 0px 3px 5px #342d2d;
+}
 
+.DatoFigura::placeholder{
+    color: #2a2222;
 }
 
 .principales{
-    background-color: #008000;
+    background: linear-gradient(45deg, #26c61a, #184613);
+    box-shadow: 0px 4px 5px #1a8412;
 }
 
 .secundarios{
-    background-color: #ff0000;
+    background: linear-gradient(50deg, #b43232, #bd0202);
+    box-shadow: 0px 4px 5px #631818;
 }
 
-#figura{
-    border-radius: 20px;
-    background-color: #808080;
-    color: #000000;
-    border-color: #000000;
-    border-width: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: smaller;
-}
 
 #calculadora {
     font-size: x-small;
     margin: 10px;
+    text-shadow: 0px 3px 5px #000086;
 }
 
 .explicacion {
@@ -71,12 +82,16 @@
     flex-direction: column;
     text-align: left;
     color: #f0ffff;
+    max-width: 500px;
+    text-shadow: 0px 3px 5px #000000;
 
 }
 
 #media {
     align-self: center;
     margin: 10px;
+    box-shadow: 0px 0px 10px #000086;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -92,24 +107,20 @@ select:hover{
     transform: scale(1.05);
 }
 
-body {
-    margin: 0;
-}
-
 a {
     text-decoration: none;
 }
 
 button {
     border-radius: 10px;
-    border-style: double;
     font-size: medium;
     text-transform: capitalize;
     text-align: center;
-    border-color: #ffffff;
+    border: none;
     color: #ffffff;
     border-width: 3px;
     margin: 5px;
+    padding: 10px 10px;
 }
 
 #portafolio {
@@ -120,28 +131,28 @@ button {
     background-color: #000086;
     font-size: 10px;
     opacity: 0.6;
+    border: double;
 }
 
 nav{
     display: flex;
     position: fixed;
     justify-content: center;
+    min-width: 98%;
     top: 0;
-    background: linear-gradient(to bottom, #000086 0%, #000000 100%);
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    padding: 15px 0;
-    border: solid #000000;
-    border-width: 3px;
-    border-radius: 10px;
+    padding: 1px 0;
+    background-color: #08085c;
+    border-radius: 0px 0px 10px 10px;
+    border:  solid 5px #000000;
+    border-bottom: 4px solid #000000;
+    border-top: none;
+
 }
 
 nav ul {
     display: flex;
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
 nav li {
@@ -151,13 +162,15 @@ nav li {
 
 nav a {
     display: block;
-    padding: 2px 10px;
+    padding: 10px 10px;
     text-decoration: none;
     font-weight: bold;
     transition: background 3s;
     color: #f0f8ff;
-    border: double #000000;
     font-size: 14px;
+    margin: 10px;
+    background: linear-gradient(45deg, #0e0e0e,#776565);
+    border-radius: 20px;
 }
 
 .submenu {
@@ -167,9 +180,16 @@ nav a {
     left: 0;
     min-width: 250px;
     z-index: 1000;
-    background-color: #000086;
 }
 
 .submenu li {
     width: 100%;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+a:active {
+    transform: scale(0.8);
 }
